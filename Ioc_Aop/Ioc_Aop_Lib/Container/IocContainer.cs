@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using Common.Attr;
+using Ioc_Aop_Lib.Aop.Ex;
 
 
-namespace Common.Container
+namespace Ioc_Aop_Lib.Container
 {
     public class IocContainer
     {
@@ -70,7 +71,8 @@ namespace Common.Container
             }
             #endregion
 
-            return instance;
+            //return instance;
+            return instance.AopExtend(source);//增加aop扩展
         }
     }
 }
