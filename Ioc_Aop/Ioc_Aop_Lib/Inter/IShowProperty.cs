@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Ioc_Aop_Lib.Inter
 {
-    public interface IShowContructor
+    public interface IShowProperty
     {
         void DoSomething();
-        void DoSomethingTwo();
     }
 }
